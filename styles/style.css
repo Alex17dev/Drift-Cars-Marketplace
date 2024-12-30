@@ -7,7 +7,7 @@ body {
     font-family: 'Montserrat';
     background-color: #fff;
     color: #101632dd;
-
+    margin: auto;
 }
 
 body, header, nav, div, ul, li, a, label, footer{
