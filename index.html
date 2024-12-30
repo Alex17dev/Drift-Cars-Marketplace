@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCM</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">  
+        <label for="open-menu" class="header__open-nav-button" role="button">☰</label> 
+        <div class="header__logo-container">
+            <img class="header__logo" src="logo.png" alt="logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href='#'>Inicio</a></li>
+                <li class="header__nav-item"><a href='#productos'>Vehiculos</a></li>
+                <li class="header__nav-item"><a href='#form'>Contactos</a></li>
+                <li class="header__nav-item"><a href='#'>Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="aside">
+            <img class="aside__img" src="https://es.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/site-simp/features/pfa/2024-nissan-gt-r-high-performance-luxury-sports-car-light-green.jpg" alt="" >   
+            <div class="aside__inf">
+                <h3 class="aside__subtitulo">Drifting y Mucho mas...</h3>
+                <p class="aside__parrafo">Inicia tu primer paso con en el driftig y tambien prueba los autos personalizados. Ademas, podes fijarte en nuestro diseños de autos si tenes un gusto o queres personalizarlos...</p>
+                <a href="/pages/login.html" class="aside__link link-one">Iniciar sesión</a>
+                <a href="/pages/register.html" class="aside__link link-two">Regístrese</a>
+            </div>
+        </aside>
+
+        <section class="productos" id="productos">
+            <h2 class="productos__titulo">Vehiculos</h2>
+            <div class="productos__container" id="container__productos">
+                <div class="producto">
+                    <h3 class="producto__titulo">Vehiculo 1</h3>
+                    <img class="producto__imagen" src="https://i.pinimg.com/736x/c1/66/8f/c1668fa3ea9ed665d8c3a956d2de17bb.jpg" alt="">
+                    <p class="producto__descripcion"><strong>Precio $</strong> Descripción del Vehiculo 1.</p>
+                    <input class="producto__boton" type="button"  value="Comprar">
+                </div>
+            </div>
+        </section>
+
+        <section class="carrito" id="carrito-compras">
+            <h2 class="carrito__title" >Carrito:</h2>
+            <ul></ul>
+            <p class="carrito__compras">Total a pagar: $0</p>
+            <div class="carrito__btn-container">
+                <input class="carrito_btn" id="boton-borrar" type="button" value="Borrar">
+                <input class="carrito_btn" id="boton-pagar" type="button" value="Pagar">
+            </div>
+            <p class="carrito__mensaje" id="mensaje__carrito"></p>
+        </section>
+
+        <section class="reseñas">
+            <h2 class="reseñas__titulo">Reseñas</h2>
+            <div class="reseñas__grid">
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente A</p>
+                </article>
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente B</p>
+                </article>
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente B</p>
+                </article>
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente C</p>
+                </article>
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente D</p>
+                </article>
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente E</p>
+                </article>
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente F</p>
+                </article>
+                <article class="reseña">
+                    <p>"Producto excelente, lo recomiendo!" - Cliente G</p>
+                </article>
+            </div>
+        </section>
+        <form action="https://formspree.io/f/mvgokewk" class="form" id="form" method="post">
+            <h2 class="form__title">Formulario de contacto</h2>
+            
+            <div class="forms_input">
+                <label>Nombre completo
+                    <input class="form__input" type="text" name="name" placeholder="Alex Soto">
+                </label>
+            </div>
+            
+            <div class="forms_input">
+                <label>Email
+                    <input class="form__input" type="email" name="email" placeholder="alex.dev@gmail.com">
+                </label>
+            </div>
+            
+            <div class="forms_input">
+                <label>Asunto
+                    <input class="form__input" type="text" name="subject" placeholder="Asunto de tu mensaje">
+                </label>
+            </div>
+            
+            <div class="form__separator">
+                <div class="form__linea"></div>
+                <div class="form__dot"></div>
+                <div class="form__linea"></div>
+            </div>
+            
+            <div class="forms_input">
+                <label>Tipo de usuario
+                    <select class="form__select" name="type-of-user">
+                        <option class="form__option" value="user1">Seguidor/a</option>
+                        <option class="form__option" value="user2">Empresa</option>
+                        <option class="form__option" value="user3">Otros</option>
+                    </select>
+                </label>
+            </div>
+        
+            <div class="forms_input">
+                <label>Referente
+                    <input class="form__input" list="referente" name="referente">
+                    <datalist id="referente">
+                        <option value="Alex">Creador de contenido</option>
+                        <option value="Programador">Desarrollador web</option>
+                        <option value="Un amigo">Me recomendó un amigo</option>
+                    </datalist>
+                </label>
+            </div>
+        
+            <div class="forms_input">
+                <label>Mensaje
+                    <textarea class="form_textarea" rows="8" name="message" placeholder="Deja tu mensaje..."></textarea>
+                </label>
+            </div>
+            
+            <div class="forms_input">
+                <label class="form__label">Acepto los términos y condiciones 
+                    <input class="form__input-checkbox" type="checkbox" name="checkbox" required>
+                </label>
+            </div>
+            
+            <div class="form__input-button">
+                <button class="form__button" type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </main>
+    <footer class="footer">
+        <a class="footer__link" href="#"> Drifting © 2024</a>
+        <a class="footer__link" href="#">Condiciones</a>
+        <a class="footer__link" href="#">Privacidad</a>
+        <a class="footer__link" href="#">Información</a>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
